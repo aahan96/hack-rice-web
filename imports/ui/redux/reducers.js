@@ -1,7 +1,9 @@
 const initialState = {
   queries: ['', '', ''],
-  restaurants: [],
+  restaurants: [[], [], []],
   photoURLs: {},
+  expanded: false,
+  show: false,
 };
 
 const store = (state = initialState, action) => {
@@ -15,10 +17,27 @@ const store = (state = initialState, action) => {
             .concat(state.queries.slice(action.index + 1)),
         })
       );
-    case 'GET_RESTAURANTS':
+    case 'ADD_RESTAURANTS':
       return (
         Object.assign({}, state, {
-          restaurants: action.restaurants,
+          restaurants: state.restaurants.map((e, i) => {
+            if (action.index === i) {
+              return action.restaurants;
+            }
+            return e;
+          }),
+        })
+      );
+    case 'TOGGLE_COLLAPSE':
+      return (
+        Object.assign({}, state, {
+          expanded: !state.expanded,
+        })
+      );
+    case 'SHOW_END':
+      return (
+        Object.assign({}, state, {
+          show: true,
         })
       );
     default:

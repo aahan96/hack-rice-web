@@ -3,8 +3,8 @@
     "google": {
       "apiKey": "AIzaSyBmiuplfFaHD74CJtB2wSkxnVU7OksrpFY"
     },
-    "wunderground": {
-      "keyID": "0"
+    "facebook": {
+      "appID": "1217644521641219"
     }
   },
   "private": {

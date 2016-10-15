@@ -63,7 +63,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   handleKeyPress: index => (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     dispatch(addTerm(e.target.value, index));
   },
   handleSubmit: queries => (e) => {

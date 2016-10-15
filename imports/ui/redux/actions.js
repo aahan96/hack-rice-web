@@ -1,5 +1,13 @@
 import { Meteor } from 'meteor/meteor';
 
+export const toggleCollapse = () => ({
+  type: 'TOGGLE_COLLAPSE',
+});
+
+export const showEnd = () => ({
+  type: 'SHOW_END',
+});
+
 export const addTerm = (term, index) => ({
   type: 'ADD_TERM',
   term,
@@ -25,24 +33,27 @@ export const addPhoto = (name, photoreference) => dispatch => (
 */
 
 export const getRestaurants = queries => (dispatch) => {
- navigator.geolocation.getCurrentPosition(position => (
-    Meteor.call(
-      'restAPI.getYelpPlaces',
-      queries.join(' '),
-      position.coords.latitude,
-      position.coords.longitude,
-      (error, result) => {
-        if (error) console.log(error);
-        else {
-          console.log(result);
-          dispatch({
-            type: 'GET_RESTAURANTS',
-            restaurants: result.data.businesses.slice(0, 5),
-          });
+  navigator.geolocation.getCurrentPosition((position) => {
+    for (let i = 0; i < queries.length; i += 1) {
+      Meteor.call(
+        'restAPI.getYelpPlaces',
+        queries[i],
+        position.coords.latitude,
+        position.coords.longitude,
+        (error, result) => {
+          if (error) console.log(error);
+          else {
+            console.log(result);
+            dispatch({
+              type: 'ADD_RESTAURANTS',
+              restaurants: result.data.businesses.slice(0, 3),
+              index: i,
+            });
+          }
         }
-      }
-    )
-  ));
+      );
+    }
+  });
  /*
   navigator.geolocation.getCurrentPosition(position => (
     Meteor.call(

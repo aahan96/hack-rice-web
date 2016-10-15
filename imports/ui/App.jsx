@@ -23,9 +23,8 @@ const App = () => (
         </div>
         <div className="container">
           <InputForm />
-          <RestaurantsView />
-          <h1>Step 2: Invite your friends</h1>
         </div>
+        <RestaurantsView />
       </div>
     </MuiThemeProvider>
   </Provider>

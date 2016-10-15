@@ -82,6 +82,7 @@ Meteor.methods({
         term: name,
         latitude: lat,
         longitude: lng,
+        categories: 'restaurants',
       },
       headers: {
         Authorization: `Bearer ${Meteor.settings.private.yelp.apiKey}`,
