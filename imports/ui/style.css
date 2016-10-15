@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+.top {
+  background-image: url("https://www.punchbowl.com/gridfs/fs/4f037e5d14f0927c2b000daf-1325629022");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.jumbotron-clear {
+  color: white;
+  height: 300px;
+  background-color: transparent;
+  text-align: center;
+  font-family: europa;
+  font-size: 48px;
+}

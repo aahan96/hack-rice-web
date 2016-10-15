@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/lukezhu/.meteor/packages/meteor-tool/.1.4.1_2.1exk9zi++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node',
+1 verbose cli   '/Users/lukezhu/.meteor/packages/meteor-tool/.1.4.1_2.1exk9zi++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-tap-event-plugin' ]
+2 info using npm@3.10.8
+3 info using node@v4.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react-tap-event-plugin
+8 silly fetchNamedPackageData react-tap-event-plugin
+9 silly mapToRegistry name react-tap-event-plugin
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'react-tap-event-plugin',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'react-tap-event-plugin',
+12 silly mapToRegistry   name: 'react-tap-event-plugin',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/react-tap-event-plugin
+14 verbose request uri https://registry.npmjs.org/react-tap-event-plugin
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 2:43:48 AM
+17 verbose request id d010952ff03b5142
+18 http request GET https://registry.npmjs.org/react-tap-event-plugin
+19 info retry will retry, error on last attempt: Error: socket hang up
+20 info attempt registry request try #2 at 2:43:59 AM
+21 http request GET https://registry.npmjs.org/react-tap-event-plugin
+22 info retry will retry, error on last attempt: Error: socket hang up
+23 info attempt registry request try #3 at 2:44:59 AM
+24 http request GET https://registry.npmjs.org/react-tap-event-plugin
+25 silly fetchPackageMetaData Error: socket hang up
+25 silly fetchPackageMetaData     at TLSSocket.onHangUp (_tls_wrap.js:1054:19)
+25 silly fetchPackageMetaData     at TLSSocket.g (events.js:260:16)
+25 silly fetchPackageMetaData     at emitNone (events.js:72:20)
+25 silly fetchPackageMetaData     at TLSSocket.emit (events.js:166:7)
+25 silly fetchPackageMetaData     at endReadableNT (_stream_readable.js:921:12)
+25 silly fetchPackageMetaData     at nextTickCallbackWith2Args (node.js:442:9)
+25 silly fetchPackageMetaData     at process._tickCallback (node.js:356:17)
+25 silly fetchPackageMetaData  error for react-tap-event-plugin { [Error: socket hang up] code: 'ECONNRESET' }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: socket hang up
+30 verbose stack     at TLSSocket.onHangUp (_tls_wrap.js:1054:19)
+30 verbose stack     at TLSSocket.g (events.js:260:16)
+30 verbose stack     at emitNone (events.js:72:20)
+30 verbose stack     at TLSSocket.emit (events.js:166:7)
+30 verbose stack     at endReadableNT (_stream_readable.js:921:12)
+30 verbose stack     at nextTickCallbackWith2Args (node.js:442:9)
+30 verbose stack     at process._tickCallback (node.js:356:17)
+31 verbose cwd /Users/lukezhu/Documents/MeteorProjects/hack-rice-web
+32 error Darwin 16.0.0
+33 error argv "/Users/lukezhu/.meteor/packages/meteor-tool/.1.4.1_2.1exk9zi++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/node" "/Users/lukezhu/.meteor/packages/meteor-tool/.1.4.1_2.1exk9zi++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/bin/npm" "install" "--save" "react-tap-event-plugin"
+34 error node v4.6.0
+35 error npm  v3.10.8
+36 error code ECONNRESET
+37 error network socket hang up
+38 error network This is most likely not a problem with npm itself
+38 error network and is related to network connectivity.
+38 error network In most cases you are behind a proxy or have bad network settings.
+38 error network
+38 error network If you are behind a proxy, please make sure that the
+38 error network 'proxy' config is set properly.  See: 'npm help config'
+39 verbose exit [ 1, true ]
