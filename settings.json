@@ -9,9 +9,9 @@
   },
   "private": {
     "yelp": {
-      "apiKey": "gtXSU3_nSPAflF8ZFLvzEC24CNeSMyD13tcI9HGOHj7S8z_8hfMwpzXH3Mhmlu0Tho_gS7DuxcJKxpeK7-0J_fJQ4GNe-jh80Z0FTAvhfMClwNSF4uC1iRx5CxTiV3Yx",
-      "appID": "1kzwj2CsEzzJfzZcTli_aA",
-      "appSecret": "kabtU0cSumUgO1FHIl2NRSPRtC4778ddkqD9ue8ucO93wbMmr6FygTXJ02JR5L2t"
+      "apiKey": "4yIDr8aJOA9SU3yvCkxgI9fp0CK8JmbO8i27fF5adEtaKphuT8tS9P8keQqPpdetdQ0VMHuWwtzqM3cPxLEIzdwW1wIDBcQYJ-8Ep2GDesm8FkFMAkeoLOK2kgUDWHYx",
+      "appID": "bAcfGfqu5EQTZOY3p_HE4g",
+      "appSecret": "eSTioIk8X5xnmJe84i1rOib0JJdLXOo7u7uYNDd1aNq1b1vTEGMMDsiUmz2N0Bu0"
     },
     "glassdoor": {
       "partnerID": "95589",

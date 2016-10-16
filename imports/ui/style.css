@@ -4,7 +4,7 @@ body {
 }
 
 .top {
-  background-image: url("https://www.punchbowl.com/gridfs/fs/4f037e5d14f0927c2b000daf-1325629022");
+  background-image: url("/images/4f037e5d14f0927c2b000daf-1325629022.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,7 +19,7 @@ body {
 }
 
 .restaurants {
-  background-image: url("http://hnzyzb.com/data/out/13/44366141-restaurant-wallpapers.jpg");
+  background-image: url("/images/44366141-restaurant-wallpapers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,7 +28,7 @@ body {
 }
 
 .end {
-  background-image: url("http://www.newyork.com/articles/wp-content/uploads/2013/08/kid-eats_450.jpg");
+  background-image: url("/images/penumbra-tables.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
