@@ -61,7 +61,7 @@ Meteor.methods({
   'restAPI.getGlassdoorRatings': function (location, company) {
     return (
       HTTP.get(
-        'http://api.glassdoor.com/api/api.htm?', {
+        'https://api.glassdoor.com/api/api.htm?', {
           params: {
             v: 1,
             format: 'json',

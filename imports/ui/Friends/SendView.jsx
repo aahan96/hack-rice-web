@@ -29,7 +29,7 @@ const SendView = ({ show, handleClick, recommendations }) => (
           const id = Math.floor(10000000 * Math.random());
           FB.ui({
             method: 'send',
-            link: `http://medrare.herokuapp.com/polls/${id}`,
+            link: `https://medrare.herokuapp.com/polls/${id}`,
           });
           handleClick();
           createPoll(id, recommendations);
