@@ -54,7 +54,7 @@ const RestaurantsView = ({ restaurants, expanded, handleClick }) => {
           </div>
         </Collapse>
       </div>
-      {rows.length > 0 ? <SendView /> : null}
+      {rows.length > 0 ? <SendView recommendations={restaurants} /> : null}
     </div>
   );
 };

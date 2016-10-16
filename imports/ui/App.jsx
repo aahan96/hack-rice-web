@@ -4,7 +4,6 @@ import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Router, Route, browserHistory } from 'react-router';
-// import { createContainer } from 'meteor/react-meteor-data';
 
 import reduxStore from './redux/reducers.js';
 import NewPoll from './NewPoll.jsx';

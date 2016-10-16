@@ -4,7 +4,6 @@ import {
   CardMedia,
   CardTitle,
 } from 'material-ui/Card';
-import { connect } from 'react-redux';
 
 // import SendDialog from './SendDialog.jsx';
 
@@ -31,7 +30,7 @@ const ExistingRecs = ({ restaurants }) => {
   return (
     <div>
       <div className="container">
-        <h1>Restaurants</h1>
+        <h1 style={{ textAlign: 'center' }}>Restaurants</h1>
         <div
           className="container"
           style={{ maxWidth: '600px', align: 'center' }}
@@ -47,8 +46,4 @@ ExistingRecs.propTypes = {
   restaurants: PropTypes.array.isRequired,
 };
 
-const mapStateToProps = state => ({
-  restaurants: state.restaurants,
-});
-
-export default connect(mapStateToProps)(ExistingRecs);
+export default ExistingRecs;

@@ -1,11 +1,25 @@
 import React, { PropTypes } from 'react';
+import { createContainer } from 'meteor/react-meteor-data';
 
-const ExistingPoll = ({ id }) => (
-  <h1>Existing Poll {id}</h1>
-);
+import Polls from '../api/polls';
+import ExistingRecs from './ExistingRecs.jsx';
 
-ExistingPoll.propTypes = {
-  id: PropTypes.number.isRequired,
+const ExistingPoll = ({ params, poll }) => {
+  return (
+    <div>
+      <h1 style={{ textAlign: 'center' }}>Existing Poll {params.id} Sketch</h1>
+      {poll ? <ExistingRecs restaurants={poll.recommendations} /> : null}
+    </div>
+  );
 };
 
-export default ExistingPoll;
+ExistingPoll.propTypes = {
+  params: PropTypes.object.isRequired,
+  poll: PropTypes.object,
+};
+
+export default createContainer((params) => {
+  return {
+    poll: Polls.findOne({ pathID: parseInt(params.params.id) }),
+  };
+}, ExistingPoll);

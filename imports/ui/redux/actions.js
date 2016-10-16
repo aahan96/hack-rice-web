@@ -14,24 +14,6 @@ export const addTerm = (term, index) => ({
   index,
 });
 
-/*
-export const addPhoto = (name, photoreference) => dispatch => (
-  Meteor.call(
-    'restAPI.getGooglePhoto',
-    photoreference,
-    (error, result) => {
-      if (error) console.log(error);
-      else {
-        console.log(result);
-        dispatch({
-          'ADD_PHOTO',
-        })
-      }
-    }
-  )
-);
-*/
-
 export const getRestaurants = queries => (dispatch) => {
   navigator.geolocation.getCurrentPosition((position) => {
     for (let i = 0; i < queries.length; i += 1) {
